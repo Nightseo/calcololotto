@@ -81,9 +81,6 @@ export default function CookieBanner() {
 
   return (
     <>
-      {/* Backdrop */}
-      <div className="fixed inset-0 bg-black bg-opacity-50 z-40" />
-
       {/* Banner */}
       <div className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t-4 border-orange-500 shadow-2xl">
         <div className="container mx-auto px-4 py-6 max-w-6xl">
