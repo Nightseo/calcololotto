@@ -203,7 +203,7 @@ export default function Home() {
                   </li>
                   <li className="flex gap-2">
                     <span className="font-bold text-orange-500 flex-shrink-0">5.</span>
-                    <span>Clicca "Calcola le Vincite" e vedi il risultato</span>
+                    <span>Clicca &quot;Calcola le Vincite&quot; e vedi il risultato</span>
                   </li>
                 </ol>
               </div>
