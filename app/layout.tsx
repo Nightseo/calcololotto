@@ -32,6 +32,15 @@ export const metadata: Metadata = {
   authors: [{ name: 'Calcolo Lotto' }],
   creator: 'Calcolo Lotto',
   publisher: 'Calcolo Lotto',
+  icons: {
+    icon: [
+      { url: '/icon.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icon.svg', type: 'image/svg+xml' },
+    ],
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
   alternates: {
     canonical: 'https://www.calcololotto.it',
   },
