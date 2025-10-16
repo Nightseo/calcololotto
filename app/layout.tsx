@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
 import "./globals.css";
 import Analytics from "./components/Analytics";
+import CookieBanner from "./components/CookieBanner";
 
 const rubik = Rubik({
   subsets: ["latin"],
@@ -112,6 +113,7 @@ export default function RootLayout({
       </head>
       <body className={`${rubik.variable} font-sans antialiased`}>
         <Analytics />
+        <CookieBanner />
         {children}
       </body>
     </html>
