@@ -22,19 +22,19 @@ export default function Header() {
           <div className="hidden md:flex items-center space-x-1">
             <Link
               href="/"
-              className="px-3 py-1.5 text-sm text-white hover:bg-white hover:bg-opacity-20 rounded-lg transition-all font-medium"
+              className="px-3 py-1.5 text-sm text-white hover:text-orange-200 rounded-lg transition-all font-medium"
             >
               Calcolatore
             </Link>
             <Link
               href="#come-funziona"
-              className="px-3 py-1.5 text-sm text-white hover:bg-white hover:bg-opacity-20 rounded-lg transition-all font-medium"
+              className="px-3 py-1.5 text-sm text-white hover:text-orange-200 rounded-lg transition-all font-medium"
             >
               Come Funziona
             </Link>
             <Link
               href="#faq"
-              className="px-3 py-1.5 text-sm text-white hover:bg-white hover:bg-opacity-20 rounded-lg transition-all font-medium"
+              className="px-3 py-1.5 text-sm text-white hover:text-orange-200 rounded-lg transition-all font-medium"
             >
               FAQ
             </Link>
