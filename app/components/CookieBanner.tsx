@@ -27,16 +27,16 @@ export default function CookieBanner() {
 
   const enableAnalytics = () => {
     // Enable Google Analytics or other analytics tools here
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('consent', 'update', {
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('consent', 'update', {
         analytics_storage: 'granted',
       });
     }
   };
 
   const disableAnalytics = () => {
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('consent', 'update', {
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('consent', 'update', {
         analytics_storage: 'denied',
       });
     }
