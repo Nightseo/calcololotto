@@ -111,16 +111,15 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="it">
+    <html lang="it" className={rubik.variable}>
       <head>
-        <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#f97316" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${rubik.variable} font-sans antialiased`}>
+      <body className="font-sans antialiased">
         <Analytics />
         <CookieBanner />
         {children}

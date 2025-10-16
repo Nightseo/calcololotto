@@ -30,13 +30,13 @@ export default function CookiePolicyPage() {
               <section>
                 <h2 className="text-2xl font-bold text-gray-900 mb-3">1. Cosa Sono i Cookie</h2>
                 <p>
-                  I cookie sono piccoli file di testo che i siti web visitati dall&apos;utente inviano al suo
+                  I cookie sono piccoli file di testo che i siti web visitati dall'utente inviano al suo
                   terminale (computer, tablet, smartphone), dove vengono memorizzati per essere poi
                   ritrasmessi agli stessi siti alla successiva visita.
                 </p>
                 <p>
                   I cookie servono a diversi scopi: possono essere necessari per il funzionamento del
-                  sito, possono servire per migliorare l&apos;esperienza di navigazione, o possono essere
+                  sito, possono servire per migliorare l'esperienza di navigazione, o possono essere
                   utilizzati per finalità di profilazione pubblicitaria.
                 </p>
                 <p>
@@ -56,7 +56,7 @@ export default function CookiePolicyPage() {
                   <p className="font-semibold text-green-800 mb-2">✓ Sempre attivi - Non richiedono consenso</p>
                   <p>
                     Questi cookie sono strettamente necessari per il funzionamento del sito e non possono
-                    essere disattivati. Non richiedono il consenso dell&apos;utente ai sensi del Provvedimento
+                    essere disattivati. Non richiedono il consenso dell'utente ai sensi del Provvedimento
                     del Garante del 10 giugno 2021.
                   </p>
                 </div>
@@ -64,7 +64,7 @@ export default function CookiePolicyPage() {
                   <strong>Finalità:</strong>
                 </p>
                 <ul className="list-disc pl-6 space-y-1">
-                  <li>Memorizzare le preferenze dell&apos;utente relative ai cookie</li>
+                  <li>Memorizzare le preferenze dell'utente relative ai cookie</li>
                   <li>Garantire la sicurezza durante la navigazione</li>
                   <li>Permettere il corretto funzionamento della calcolatrice</li>
                 </ul>
@@ -104,7 +104,7 @@ export default function CookiePolicyPage() {
                 </div>
                 <p>
                   <strong>Google Analytics:</strong> Utilizziamo Google Analytics con IP anonimizzato per
-                  raccogliere dati statistici aggregati sul traffico e sull&apos;utilizzo del sito.
+                  raccogliere dati statistici aggregati sul traffico e sull'utilizzo del sito.
                 </p>
                 <p>
                   <strong>Finalità:</strong>
@@ -112,14 +112,14 @@ export default function CookiePolicyPage() {
                 <ul className="list-disc pl-6 space-y-1">
                   <li>Comprendere come gli utenti interagiscono con il sito</li>
                   <li>Analizzare le pagine più visitate</li>
-                  <li>Migliorare l&apos;esperienza di navigazione</li>
+                  <li>Migliorare l'esperienza di navigazione</li>
                   <li>Ottimizzare le funzionalità della calcolatrice</li>
                 </ul>
                 <p>
                   <strong>Durata:</strong> I cookie analitici hanno una durata variabile fino a 24 mesi.
                 </p>
                 <p>
-                  <strong>Base giuridica:</strong> Consenso esplicito dell&apos;utente (art. 6, par. 1, lett. a) GDPR).
+                  <strong>Base giuridica:</strong> Consenso esplicito dell'utente (art. 6, par. 1, lett. a) GDPR).
                 </p>
                 <p>
                   <strong>Cookie di terze parti:</strong>
@@ -185,7 +185,7 @@ export default function CookiePolicyPage() {
                 </p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>
-                    <strong>Google Analytics:</strong> per analisi statistiche anonime (se abilitato dall&apos;utente).
+                    <strong>Google Analytics:</strong> per analisi statistiche anonime (se abilitato dall'utente).
                     <br />
                     <a
                       href="https://policies.google.com/privacy"
@@ -280,7 +280,7 @@ export default function CookiePolicyPage() {
                 </ul>
                 <p className="mt-3">
                   <strong>Nota:</strong> La disattivazione dei cookie tecnici potrebbe compromettere il
-                  corretto funzionamento del sito o impedire l&apos;accesso ad alcune funzionalità.
+                  corretto funzionamento del sito o impedire l'accesso ad alcune funzionalità.
                 </p>
 
                 <h3 className="text-xl font-semibold text-gray-900 mt-4 mb-2">4.3 Opt-out Google Analytics</h3>
@@ -299,7 +299,7 @@ export default function CookiePolicyPage() {
 
               {/* Diritti dell'utente */}
               <section>
-                <h2 className="text-2xl font-bold text-gray-900 mb-3">5. Diritti dell&apos;Utente</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-3">5. Diritti dell'Utente</h2>
                 <p>
                   In conformità al GDPR, hai il diritto di:
                 </p>
@@ -314,7 +314,7 @@ export default function CookiePolicyPage() {
                   <li>Proporre reclamo al Garante Privacy</li>
                 </ul>
                 <p className="mt-3">
-                  Per esercitare questi diritti, contattaci all&apos;indirizzo:{' '}
+                  Per esercitare questi diritti, contattaci all'indirizzo:{' '}
                   <a href="mailto:privacy@calcololotto.it" className="text-orange-600 underline hover:text-orange-700">
                     privacy@calcololotto.it
                   </a>
@@ -337,7 +337,7 @@ export default function CookiePolicyPage() {
               <section>
                 <h2 className="text-2xl font-bold text-gray-900 mb-3">7. Contatti</h2>
                 <p>
-                  Per qualsiasi domanda relativa all&apos;utilizzo dei cookie o alla presente Cookie Policy,
+                  Per qualsiasi domanda relativa all'utilizzo dei cookie o alla presente Cookie Policy,
                   puoi contattarci:
                 </p>
                 <div className="bg-orange-50 border-l-4 border-orange-500 p-4 rounded-r-lg">

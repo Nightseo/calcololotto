@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 export default function CookieBanner() {
+  const [mounted, setMounted] = useState(false);
   const [showBanner, setShowBanner] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [preferences, setPreferences] = useState({
@@ -13,6 +14,7 @@ export default function CookieBanner() {
   });
 
   useEffect(() => {
+    setMounted(true);
     const consent = localStorage.getItem('cookie-consent');
     if (!consent) {
       setShowBanner(true);
@@ -77,23 +79,23 @@ export default function CookieBanner() {
     savePreferences(preferences);
   };
 
-  if (!showBanner) return null;
+  if (!mounted || !showBanner) return null;
 
   return (
     <>
       {/* Banner */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t-4 border-orange-500 shadow-2xl">
-        <div className="container mx-auto px-4 py-6 max-w-6xl">
+      <div className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t-4 border-orange-500 shadow-2xl max-h-screen overflow-y-auto">
+        <div className="container mx-auto px-4 py-4 sm:py-6 max-w-6xl">
           {!showSettings ? (
             // Main Banner
-            <div className="flex flex-col md:flex-row gap-4 items-start md:items-center justify-between">
+            <div className="flex flex-col md:flex-row gap-3 sm:gap-4 items-start md:items-center justify-between">
               <div className="flex-1">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
+                <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-1 sm:mb-2">
                   🍪 Utilizziamo i cookie
                 </h3>
-                <p className="text-sm text-gray-700 mb-2">
+                <p className="text-xs sm:text-sm text-gray-700 mb-2">
                   Questo sito utilizza cookie tecnici necessari per il funzionamento e, previo consenso,
-                  cookie analitici per migliorare l&apos;esperienza utente. I tuoi dati sono trattati nel
+                  cookie analitici per migliorare l'esperienza utente. I tuoi dati sono trattati nel
                   rispetto del GDPR (Regolamento UE 2016/679) e del Codice Privacy italiano (D.Lgs. 196/2003).
                 </p>
                 <div className="flex flex-wrap gap-2 text-xs">
@@ -113,22 +115,22 @@ export default function CookieBanner() {
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-2 w-full md:w-auto">
+              <div className="flex flex-col sm:flex-row gap-2 w-full md:w-auto flex-shrink-0">
                 <button
                   onClick={() => setShowSettings(true)}
-                  className="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors whitespace-nowrap"
+                  className="px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 active:bg-gray-300 rounded-lg transition-colors whitespace-nowrap"
                 >
                   Personalizza
                 </button>
                 <button
                   onClick={acceptNecessary}
-                  className="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors whitespace-nowrap"
+                  className="px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 active:bg-gray-300 rounded-lg transition-colors whitespace-nowrap"
                 >
                   Solo necessari
                 </button>
                 <button
                   onClick={acceptAll}
-                  className="px-6 py-2 text-sm font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-lg transition-colors whitespace-nowrap"
+                  className="px-4 sm:px-6 py-2 text-xs sm:text-sm font-bold text-white bg-orange-500 hover:bg-orange-600 active:bg-orange-700 rounded-lg transition-colors whitespace-nowrap"
                 >
                   Accetta tutti
                 </button>
@@ -136,9 +138,9 @@ export default function CookieBanner() {
             </div>
           ) : (
             // Settings Panel
-            <div className="space-y-4">
-              <div className="flex items-center justify-between mb-4">
-                <h3 className="text-lg font-bold text-gray-900">
+            <div className="space-y-3 sm:space-y-4">
+              <div className="flex items-center justify-between mb-3 sm:mb-4">
+                <h3 className="text-base sm:text-lg font-bold text-gray-900">
                   Impostazioni Cookie
                 </h3>
                 <button
@@ -152,29 +154,29 @@ export default function CookieBanner() {
                 </button>
               </div>
 
-              <p className="text-sm text-gray-600 mb-4">
+              <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">
                 Seleziona quali cookie desideri autorizzare. I cookie necessari sono sempre attivi
                 per garantire il funzionamento del sito.
               </p>
 
-              <div className="space-y-3">
+              <div className="space-y-2 sm:space-y-3">
                 {/* Necessary Cookies */}
-                <div className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg border border-gray-200">
+                <div className="flex items-start gap-2 sm:gap-3 p-2 sm:p-3 bg-gray-50 rounded-lg border border-gray-200">
                   <input
                     type="checkbox"
                     checked={preferences.necessary}
                     disabled
-                    className="mt-1 w-4 h-4 text-orange-500"
+                    className="mt-1 w-4 h-4 text-orange-500 flex-shrink-0"
                     aria-label="Cookie necessari"
                   />
-                  <div className="flex-1">
-                    <div className="flex items-center gap-2">
-                      <h4 className="font-semibold text-sm text-gray-900">Cookie Necessari</h4>
-                      <span className="text-xs bg-gray-200 text-gray-700 px-2 py-0.5 rounded">
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-1 sm:gap-2 flex-wrap">
+                      <h4 className="font-semibold text-xs sm:text-sm text-gray-900">Cookie Necessari</h4>
+                      <span className="text-[10px] sm:text-xs bg-gray-200 text-gray-700 px-1.5 sm:px-2 py-0.5 rounded">
                         Sempre attivi
                       </span>
                     </div>
-                    <p className="text-xs text-gray-600 mt-1">
+                    <p className="text-[10px] sm:text-xs text-gray-600 mt-1">
                       Cookie tecnici indispensabili per il funzionamento del sito (es. preferenze cookie,
                       sicurezza). Non richiedono consenso secondo il Provvedimento Garante del 10 giugno 2021.
                     </p>
@@ -182,52 +184,52 @@ export default function CookieBanner() {
                 </div>
 
                 {/* Analytics Cookies */}
-                <div className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg border border-gray-200">
+                <div className="flex items-start gap-2 sm:gap-3 p-2 sm:p-3 bg-gray-50 rounded-lg border border-gray-200">
                   <input
                     type="checkbox"
                     checked={preferences.analytics}
                     onChange={(e) => setPreferences({ ...preferences, analytics: e.target.checked })}
-                    className="mt-1 w-4 h-4 text-orange-500 accent-orange-500"
+                    className="mt-1 w-4 h-4 text-orange-500 accent-orange-500 flex-shrink-0"
                     aria-label="Cookie analitici"
                   />
-                  <div className="flex-1">
-                    <h4 className="font-semibold text-sm text-gray-900">Cookie Analitici</h4>
-                    <p className="text-xs text-gray-600 mt-1">
+                  <div className="flex-1 min-w-0">
+                    <h4 className="font-semibold text-xs sm:text-sm text-gray-900">Cookie Analitici</h4>
+                    <p className="text-[10px] sm:text-xs text-gray-600 mt-1">
                       Raccolgono dati in forma anonima per comprendere come gli utenti utilizzano il sito
-                      e migliorare l&apos;esperienza di navigazione (es. Google Analytics con IP anonimizzato).
+                      e migliorare l'esperienza di navigazione (es. Google Analytics con IP anonimizzato).
                     </p>
                   </div>
                 </div>
 
                 {/* Marketing Cookies */}
-                <div className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg border border-gray-200">
+                <div className="flex items-start gap-2 sm:gap-3 p-2 sm:p-3 bg-gray-50 rounded-lg border border-gray-200">
                   <input
                     type="checkbox"
                     checked={preferences.marketing}
                     onChange={(e) => setPreferences({ ...preferences, marketing: e.target.checked })}
-                    className="mt-1 w-4 h-4 text-orange-500 accent-orange-500"
+                    className="mt-1 w-4 h-4 text-orange-500 accent-orange-500 flex-shrink-0"
                     aria-label="Cookie di marketing"
                   />
-                  <div className="flex-1">
-                    <h4 className="font-semibold text-sm text-gray-900">Cookie di Marketing</h4>
-                    <p className="text-xs text-gray-600 mt-1">
-                      Utilizzati per mostrare pubblicità pertinenti e misurare l&apos;efficacia delle campagne
+                  <div className="flex-1 min-w-0">
+                    <h4 className="font-semibold text-xs sm:text-sm text-gray-900">Cookie di Marketing</h4>
+                    <p className="text-[10px] sm:text-xs text-gray-600 mt-1">
+                      Utilizzati per mostrare pubblicità pertinenti e misurare l'efficacia delle campagne
                       pubblicitarie. Attualmente non utilizzati su questo sito.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-2 pt-4">
+              <div className="flex flex-col sm:flex-row gap-2 pt-3 sm:pt-4">
                 <button
                   onClick={acceptSelected}
-                  className="flex-1 px-6 py-2 text-sm font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-lg transition-colors"
+                  className="flex-1 px-4 sm:px-6 py-2 text-xs sm:text-sm font-bold text-white bg-orange-500 hover:bg-orange-600 active:bg-orange-700 rounded-lg transition-colors"
                 >
                   Salva preferenze
                 </button>
                 <button
                   onClick={acceptAll}
-                  className="flex-1 px-6 py-2 text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors"
+                  className="flex-1 px-4 sm:px-6 py-2 text-xs sm:text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 active:bg-gray-300 rounded-lg transition-colors"
                 >
                   Accetta tutti
                 </button>

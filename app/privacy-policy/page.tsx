@@ -31,7 +31,7 @@ export default function PrivacyPolicyPage() {
                 <h2 className="text-2xl font-bold text-gray-900 mb-3">1. Introduzione</h2>
                 <p>
                   La presente Privacy Policy descrive le modalità di raccolta, utilizzo e protezione
-                  dei dati personali degli utenti del sito web <strong>www.calcololotto.it</strong> (di seguito &quot;Sito&quot;).
+                  dei dati personali degli utenti del sito web <strong>www.calcololotto.it</strong> (di seguito "Sito").
                 </p>
                 <p>
                   Il Sito rispetta la normativa italiana ed europea in materia di protezione dei dati personali,
@@ -63,7 +63,7 @@ export default function PrivacyPolicyPage() {
                 </div>
                 <p className="mt-3">
                   Per esercitare i diritti previsti dal GDPR o per qualsiasi informazione relativa
-                  al trattamento dei dati personali, potete contattarci all&apos;indirizzo email sopra indicato.
+                  al trattamento dei dati personali, potete contattarci all'indirizzo email sopra indicato.
                 </p>
               </section>
 
@@ -75,7 +75,7 @@ export default function PrivacyPolicyPage() {
                 <p>
                   Durante la normale navigazione, i sistemi informatici e le procedure software preposte
                   al funzionamento del Sito acquisiscono alcuni dati personali la cui trasmissione è implicita
-                  nell&apos;uso dei protocolli di comunicazione Internet.
+                  nell'uso dei protocolli di comunicazione Internet.
                 </p>
                 <p>
                   Questi dati includono:
@@ -90,7 +90,7 @@ export default function PrivacyPolicyPage() {
                 </ul>
                 <p>
                   <strong>Finalità:</strong> Questi dati sono utilizzati esclusivamente per ottenere informazioni
-                  statistiche anonime sull&apos;uso del Sito e per controllarne il corretto funzionamento.
+                  statistiche anonime sull'uso del Sito e per controllarne il corretto funzionamento.
                 </p>
                 <p>
                   <strong>Base giuridica:</strong> Legittimo interesse del Titolare (art. 6, par. 1, lett. f) GDPR).
@@ -102,11 +102,11 @@ export default function PrivacyPolicyPage() {
                 <h3 className="text-xl font-semibold text-gray-900 mt-4 mb-2">3.2 Cookie Tecnici</h3>
                 <p>
                   Il Sito utilizza cookie tecnici necessari per il funzionamento e la sicurezza del sito,
-                  in particolare per memorizzare le preferenze dell&apos;utente relative ai cookie.
+                  in particolare per memorizzare le preferenze dell'utente relative ai cookie.
                 </p>
                 <p>
                   <strong>Finalità:</strong> Garantire il corretto funzionamento del Sito e memorizzare
-                  le scelte dell&apos;utente.
+                  le scelte dell'utente.
                 </p>
                 <p>
                   <strong>Base giuridica:</strong> Non richiedono consenso ai sensi del Provvedimento del
@@ -119,10 +119,10 @@ export default function PrivacyPolicyPage() {
                   per raccogliere dati statistici aggregati e anonimi sul comportamento degli utenti.
                 </p>
                 <p>
-                  <strong>Finalità:</strong> Migliorare l&apos;esperienza utente e ottimizzare le funzionalità del Sito.
+                  <strong>Finalità:</strong> Migliorare l'esperienza utente e ottimizzare le funzionalità del Sito.
                 </p>
                 <p>
-                  <strong>Base giuridica:</strong> Consenso esplicito dell&apos;utente (art. 6, par. 1, lett. a) GDPR).
+                  <strong>Base giuridica:</strong> Consenso esplicito dell'utente (art. 6, par. 1, lett. a) GDPR).
                 </p>
                 <p>
                   Per maggiori informazioni sui cookie, consulta la nostra{' '}
@@ -131,15 +131,15 @@ export default function PrivacyPolicyPage() {
                   </a>.
                 </p>
 
-                <h3 className="text-xl font-semibold text-gray-900 mt-4 mb-2">3.4 Dati Inseriti dall&apos;Utente</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mt-4 mb-2">3.4 Dati Inseriti dall'Utente</h3>
                 <p>
                   Il Sito offre una calcolatrice per il calcolo delle vincite del Lotto. Tutti i dati
-                  inseriti dall&apos;utente nella calcolatrice (numeri giocati, importi, ruote) vengono
-                  elaborati <strong>esclusivamente lato client</strong> (nel browser dell&apos;utente) e
+                  inseriti dall'utente nella calcolatrice (numeri giocati, importi, ruote) vengono
+                  elaborati <strong>esclusivamente lato client</strong> (nel browser dell'utente) e
                   <strong> non vengono mai inviati ai nostri server</strong>.
                 </p>
                 <p>
-                  <strong>Finalità:</strong> Fornire il servizio di calcolo richiesto dall&apos;utente.
+                  <strong>Finalità:</strong> Fornire il servizio di calcolo richiesto dall'utente.
                 </p>
                 <p>
                   <strong>Base giuridica:</strong> Non applicabile, in quanto nessun dato viene raccolto o memorizzato.
@@ -172,7 +172,7 @@ export default function PrivacyPolicyPage() {
                     manutenzione e supporto tecnico del Sito
                   </li>
                   <li>
-                    <strong>Strumenti di analisi:</strong> Google Analytics (se abilitato dall&apos;utente),
+                    <strong>Strumenti di analisi:</strong> Google Analytics (se abilitato dall'utente),
                     con IP anonimizzato
                   </li>
                   <li>
@@ -197,14 +197,14 @@ export default function PrivacyPolicyPage() {
 
               {/* Diritti dell'interessato */}
               <section>
-                <h2 className="text-2xl font-bold text-gray-900 mb-3">7. Diritti dell&apos;Interessato</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-3">7. Diritti dell'Interessato</h2>
                 <p>
                   In qualità di interessato, hai il diritto di esercitare, ai sensi degli artt. 15-22 GDPR,
                   i seguenti diritti:
                 </p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>
-                    <strong>Diritto di accesso (art. 15):</strong> ottenere conferma dell&apos;esistenza di dati personali
+                    <strong>Diritto di accesso (art. 15):</strong> ottenere conferma dell'esistenza di dati personali
                     che ti riguardano e riceverne copia
                   </li>
                   <li>
@@ -212,7 +212,7 @@ export default function PrivacyPolicyPage() {
                   </li>
                   <li>
                     <strong>Diritto di cancellazione (art. 17):</strong> ottenere la cancellazione dei dati
-                    (&quot;diritto all&apos;oblio&quot;)
+                    ("diritto all'oblio")
                   </li>
                   <li>
                     <strong>Diritto di limitazione (art. 18):</strong> ottenere la limitazione del trattamento
@@ -231,13 +231,13 @@ export default function PrivacyPolicyPage() {
                   </li>
                 </ul>
                 <p className="mt-4">
-                  Per esercitare i tuoi diritti, puoi contattarci all&apos;indirizzo email:{' '}
+                  Per esercitare i tuoi diritti, puoi contattarci all'indirizzo email:{' '}
                   <a href="mailto:privacy@calcololotto.it" className="text-orange-600 underline hover:text-orange-700">
                     privacy@calcololotto.it
                   </a>
                 </p>
                 <p>
-                  Hai inoltre il diritto di proporre reclamo all&apos;Autorità Garante per la Protezione
+                  Hai inoltre il diritto di proporre reclamo all'Autorità Garante per la Protezione
                   dei Dati Personali:
                 </p>
                 <div className="bg-gray-50 border-l-4 border-orange-500 p-4 rounded-r-lg">

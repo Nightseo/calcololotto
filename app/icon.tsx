@@ -11,12 +11,15 @@ export const size = {
 export const contentType = 'image/png';
 
 // Image generation
-export default function Icon() {
+export default function Icon({ searchParams }: { searchParams?: { size?: string } }) {
+  const iconSize = searchParams?.size ? parseInt(searchParams.size) : 32;
+  const fontSize = iconSize * 0.75;
+
   return new ImageResponse(
     (
       <div
         style={{
-          fontSize: 24,
+          fontSize,
           background: '#f97316',
           width: '100%',
           height: '100%',
@@ -31,7 +34,8 @@ export default function Icon() {
       </div>
     ),
     {
-      ...size,
+      width: iconSize,
+      height: iconSize,
     }
   );
 }
