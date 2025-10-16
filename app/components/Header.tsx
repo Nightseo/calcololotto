@@ -22,19 +22,19 @@ export default function Header() {
           <div className="hidden md:flex items-center space-x-1">
             <Link
               href="/"
-              className="px-3 py-1.5 text-sm text-white hover:bg-white hover:bg-opacity-20 hover:text-white rounded-lg transition-all font-medium"
+              className="px-3 py-1.5 text-sm text-white hover:bg-white hover:bg-opacity-20 rounded-lg transition-all font-medium"
             >
               Calcolatore
             </Link>
             <Link
               href="#come-funziona"
-              className="px-3 py-1.5 text-sm text-white hover:bg-white hover:bg-opacity-20 hover:text-white rounded-lg transition-all font-medium"
+              className="px-3 py-1.5 text-sm text-white hover:bg-white hover:bg-opacity-20 rounded-lg transition-all font-medium"
             >
               Come Funziona
             </Link>
             <Link
               href="#faq"
-              className="px-3 py-1.5 text-sm text-white hover:bg-white hover:bg-opacity-20 hover:text-white rounded-lg transition-all font-medium"
+              className="px-3 py-1.5 text-sm text-white hover:bg-white hover:bg-opacity-20 rounded-lg transition-all font-medium"
             >
               FAQ
             </Link>
@@ -61,25 +61,25 @@ export default function Header() {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden pb-3 animate-fade-in-down">
-            <div className="flex flex-col space-y-1 bg-white bg-opacity-10 backdrop-blur-lg rounded-lg p-2">
+            <div className="flex flex-col space-y-1 bg-white rounded-lg p-2">
               <Link
                 href="/"
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-3 py-2 text-sm text-white hover:bg-white hover:bg-opacity-20 rounded-lg transition-all font-medium text-center"
+                className="px-3 py-2 text-sm text-orange-600 hover:bg-orange-50 rounded-lg transition-all font-medium text-center"
               >
                 Calcolatore
               </Link>
               <Link
                 href="#come-funziona"
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-3 py-2 text-sm text-white hover:bg-white hover:bg-opacity-20 rounded-lg transition-all font-medium text-center"
+                className="px-3 py-2 text-sm text-orange-600 hover:bg-orange-50 rounded-lg transition-all font-medium text-center"
               >
                 Come Funziona
               </Link>
               <Link
                 href="#faq"
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-3 py-2 text-sm text-white hover:bg-white hover:bg-opacity-20 rounded-lg transition-all font-medium text-center"
+                className="px-3 py-2 text-sm text-orange-600 hover:bg-orange-50 rounded-lg transition-all font-medium text-center"
               >
                 FAQ
               </Link>
