@@ -182,7 +182,7 @@ export default function LottoCalculator() {
           disabled={!hasValidInput || isCalculating}
           className={`w-full px-4 py-3 text-base font-bold rounded-xl shadow-md transition-all ${
             hasValidInput && !isCalculating
-              ? 'bg-gradient-to-r from-green-500 to-green-600 text-white hover:shadow-lg active:scale-98'
+              ? 'bg-gradient-to-r from-green-500 to-green-600 text-white hover:shadow-lg active:scale-98 cursor-pointer'
               : 'bg-gray-300 text-gray-500 cursor-not-allowed'
           }`}
         >
